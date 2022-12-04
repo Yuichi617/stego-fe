@@ -1,0 +1,43 @@
+body {
+  font-family: "ヒラギノ角ゴシック体", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  line-height: 1.75;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+main {
+  flex: 1;
+  background: #F2F2F2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  @include mobile {
+    width: 130px;
+    height: 45px;
+    font-size: 13px;
+  }
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transition: opacity .3s;
+}
+
+.err {
+  color: red;
+  font-size: 13px;
+}
