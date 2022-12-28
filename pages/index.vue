@@ -72,6 +72,7 @@
       p {
         color: white;
         font-family: '游ゴシック体';
+        font-size: 18px;
         @include mobile {
           font-size: 14px;
         }

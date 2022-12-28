@@ -12,6 +12,12 @@ export default {
     '~/assets/css/reset.scss',
     '~/assets/css/main.scss',
   ],
+  publicRuntimeConfig: {
+    baseURL: process.env.NODE_ENV === 'production' ? process.env.BASE_URL : 'http://localhost:8080'
+  },
+  modules: [
+    "@nuxtjs/axios",
+  ],
   buildModules: [
     '@nuxtjs/style-resources',
   ],
